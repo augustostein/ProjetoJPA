@@ -1,35 +1,20 @@
 package br.com.syonet.principal;
 
 import br.com.syonet.dao.LivroDAO;
-import br.com.syonet.entidade.Correntista;
+import br.com.syonet.entidade.Livro;
 
 public class App {
 	public static void main(String[] args) {
 		
-		Correntista correntista1 = new Correntista();
+		Livro livro1 = new Livro();
 		
-		correntista1.setNome("Augusto Stein");
-		correntista1.setCpf("02414185007");
+		livro1.setTitulo("Dois carecas brigando por um pente");
+		livro1.setNomeAutor("Jorginho");
 
 		LivroDAO dao = new LivroDAO();
-		dao.salva(correntista1);
+		dao.salva(livro1);
 		
 		
 	}
 
-	
-	
-	/*
-	 * Projeto - Camadas:
-	 * 
-	 * 1. Entidade
-	 * 2. Camada Persistencia: Quem vai gerenciar nossa camada (DAO / Repository)
-	 * 3. Camada de Regra de Negocio: Service, Business, Facade
-	 * 4. Camada API: como vai expor todo resto para outras aplicações, site, interface web etc
-	 * 
-	 * 4.1 Main - Execução da aplicação
-	 * 
-	 * Controler, Service, Resource
-	 * 
-	 */
 }
