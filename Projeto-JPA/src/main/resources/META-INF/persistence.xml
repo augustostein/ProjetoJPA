@@ -6,7 +6,7 @@
     <persistence-unit name="jpa-banco">
         <properties>
             <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/jpabanco" />
-            <property name="javax.persistence.jdbc.user" value="syonet" />
+            <property name="javax.persistence.jdbc.user" value="postgres" />
             <property name="javax.persistence.jdbc.password" value="syonet" />
             <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
             <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQL9Dialect" />

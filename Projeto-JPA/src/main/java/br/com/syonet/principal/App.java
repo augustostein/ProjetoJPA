@@ -9,11 +9,12 @@ public class App {
 		Livro livro1 = new Livro();
 		
 		livro1.setTitulo("Dois carecas brigando por um pente");
-		livro1.setNomeAutor("Jorginho");
+		livro1.setNomeAutor("Jorgisney");
 
 		LivroDAO dao = new LivroDAO();
 		dao.salva(livro1);
 		
+		dao.buscaLivroId(1);
 		
 	}
 
